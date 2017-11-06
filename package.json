@@ -8,7 +8,8 @@
     "test": "NODE_ENV=test mocha --recursive tests",
     "test:coverage": "nyc npm test",
     "test:unit": "mocha --recursive test/middleware test/models test/routes",
-    "test:integration": "mocha --recursive test/integration"
+    "test:integration": "mocha --recursive test/integration",
+    "lint": "./node_modules/.bin/eslint app/**/*.js"
   },
   "dependencies": {
     "express": "^4.13.3",
@@ -25,6 +26,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "debug": "^2.2.0",
+    "eslint": "^4.10.0",
     "gulp": "^3.9.0",
     "gulp-less": "^3.0.1",
     "gulp-livereload": "^3.8.0",
